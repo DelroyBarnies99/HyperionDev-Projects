@@ -1,0 +1,37 @@
+Username:          JohnMoxley99
+Title:             Janitor
+description:       your first task is to mop all room floors from b block and
+                   c block.
+                   after this task is completed you need to wash windows
+                   and toilets in all the bathrooms.
+                   your last task of the day is to take out the garbage for pickup.
+date:              2022/02/02
+due date:          2022/02/02
+completed:         no
+
+Username:          MickAnderson38
+Title:             General Manager
+description:       you need to walk around every 2 hours to make sure
+                   everything is in order
+                   prepare staff work schedules and assign specific duties
+date:              2022/02/02
+due date:          2022/02/02
+completed:         yes
+
+Username:          BobWest11
+Title:             Accountant
+description:       record and categorise expenses also prepare financial records
+                   take care of tax returns and make sure their paid on time
+date:              2022/02/02
+due date:          2022/02/02
+completed:         no
+
+Username:          JennyCooper56
+Title:             Marketing
+description:       you need to check ratings and remove low quality pages
+date:              2022/02/02
+due date:          2022/02/02
+completed:         yes
+
+
+
