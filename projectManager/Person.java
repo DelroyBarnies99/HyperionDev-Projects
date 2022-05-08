@@ -34,22 +34,18 @@ public class Person{
 			System.out.print("\nEnter the architects name:");
 			Scanner input12 = new Scanner(System.in);
 			String architectName = input12.next();
-			input12.close();
 			
 			System.out.print("\nEnter the architects telephone number:");
 			Scanner input13 = new Scanner(System.in);
 			String architectNum = input13.next();
-			input13.close();
 			
 			System.out.print("\nEnter the architects email:");
 			Scanner input14 = new Scanner(System.in);
 			String architectEmail = input14.next();
-			input14.close();
 			
 			System.out.print("\nEnter the architects physical address:");
 			Scanner input15 = new Scanner(System.in);
 			String architectAddress = input15.next();
-			input15.close();
 		    
 			// takes user input and creates new person object with architect position
 			Person architect = new Person(name, "architect", architectName, architectNum, architectEmail, architectAddress);
@@ -64,22 +60,18 @@ public class Person{
 			System.out.print("\nEnter the contractors name:");
 			Scanner input12 = new Scanner(System.in);
 			String contractorName = input12.next();
-			input12.close();
 			
 			System.out.print("\nEnter the contractors telephone number:");
 			Scanner input13 = new Scanner(System.in);
 			String contractorNum = input13.next();
-			input13.close();
 			
 			System.out.print("\nEnter the contractors email:");
 			Scanner input14 = new Scanner(System.in);
 			String contractorEmail = input14.next();
-			input14.close();
 			
 			System.out.print("\nEnter the contractors physical address:");
 			Scanner input15 = new Scanner(System.in);
 			String contractorAddress = input15.next();
-			input15.close();
 		    
 			// takes user input and creates new person object with contractor position
 			Person contractor = new Person(name, "contractor", contractorName, contractorNum, contractorEmail, contractorAddress);
@@ -94,22 +86,18 @@ public class Person{
 			System.out.print("\nEnter the customers name:");
 			Scanner input12 = new Scanner(System.in);
 			String customerName = input12.next();
-			input12.close();
 			
 			System.out.print("\nEnter the customers telephone number:");
 			Scanner input13 = new Scanner(System.in);
 			String customerNum = input13.next();
-			input13.close();
 			
 			System.out.print("\nEnter the customers email:");
 			Scanner input14 = new Scanner(System.in);
 			String customerEmail = input14.next();
-			input14.close();
 			
 			System.out.print("\nEnter the customers physical address:");
 			Scanner input15 = new Scanner(System.in);
 			String customerAddress = input15.next();
-			input15.close();
 		    
 			// takes user input and creates new person object with customer position
 			Person customer = new Person(name, "customer", customerName, customerNum, customerEmail, customerAddress);
@@ -124,12 +112,10 @@ public class Person{
 	    	System.out.print("Enter the contractors new telephone number:");
 			Scanner input10 = new Scanner(System.in);
 			String newTelNum = input10.next();
-			input10.close();
 			
 			System.out.print("Enter the contractors new email:");
 			Scanner input11 = new Scanner(System.in);
 			String newEmail = input11.next();
-			input11.close();
 			
 			// updates contractors telephone number and email based on user input
 			person.telephoneNum = newTelNum;

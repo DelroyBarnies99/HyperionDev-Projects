@@ -38,8 +38,7 @@ public class Project{
 			System.out.print("\nEnter the project name:");
 			Scanner input = new Scanner(System.in);
 			String name = input.next();
-			input.close();
-						
+			
 			System.out.print("\nEnter the project number:");
 			Scanner input1 = new Scanner(System.in);
 			
@@ -49,17 +48,14 @@ public class Project{
 				input1 = new Scanner(System.in);
 			}
 			int number = input1.nextInt();
-			input1.close();
 			
 			System.out.print("\nEnter the building type:");
 			Scanner input2 = new Scanner(System.in);
 			String buildingType = input2.next();
-			input2.close();
 			
 			System.out.print("\nEnter the address:");
 			Scanner input3 = new Scanner(System.in);
 			String address = input3.next();
-			input3.close();
 			
 			System.out.print("\nEnter the ERF number:");
 			Scanner input4 = new Scanner(System.in);
@@ -70,7 +66,6 @@ public class Project{
 					input4 = new Scanner(System.in);
 				}
 			int erf = input4.nextInt();
-			input4.close();
 			
 			System.out.print("\nEnter the charging fee:");
 			Scanner input5 = new Scanner(System.in).useLocale(Locale.US);
@@ -95,7 +90,6 @@ public class Project{
 			System.out.print("\nEnter the deadline:");
 			Scanner input7 = new Scanner(System.in);
 			String deadline = input7.next();
-			input7.close();
 				
 		    // takes user input and creates Project object
 			Project thisProject = new Project(name, number, buildingType, address, erf, fee, amountPaid, deadline);
@@ -112,7 +106,6 @@ public class Project{
 		System.out.print("Enter the new date:");
 		Scanner input8 = new Scanner(System.in);
 		String newdate = input8.next();
-		input8.close();
 		
 		// updates the deadline based on the input due date
 		project.deadline = newdate;

@@ -48,7 +48,6 @@ public class ProjectManager {
 				option = input1.next();
 				option.toLowerCase();
 			}
-			input1.close();
 					
 		    // creates new projects
 		    if (option.equals("np")) {
@@ -59,7 +58,6 @@ public class ProjectManager {
 		    	System.out.print("\nEnter the project name:");
 				Scanner input16 = new Scanner(System.in);
 				String name = input16.next();
-				input16.close();
 				
 				// adds the created people to the people list
 		    	people.add(Person.newArchitect(name));
@@ -73,7 +71,6 @@ public class ProjectManager {
 		    	System.out.print("\nEnter the project name:");
 				Scanner input3 = new Scanner(System.in);
 				String name = input3.next();
-				input3.close();
 				
 				// iterates through every project to find the input project name 
 				for (Project project : projects) {
@@ -94,7 +91,6 @@ public class ProjectManager {
 		    	System.out.print("\nEnter the project name:");
 				Scanner input3 = new Scanner(System.in);
 				String name = input3.next();
-				input3.close();
 				
 				// locates the correct project from projects list and changes the amount paid to date
 				for (Project project : projects) {
@@ -112,7 +108,6 @@ public class ProjectManager {
 		    	System.out.print("\nEnter the contractors name:");
 				Scanner input3 = new Scanner(System.in);
 				String name = input3.next();
-				input3.close();
 				
 				// locates the correct contractor and updates their details 
 				for (Person person : people) {
@@ -130,12 +125,10 @@ public class ProjectManager {
 		    	System.out.print("\nEnter the project name:");
 				Scanner input16 = new Scanner(System.in);
 				String projectName = input16.next();
-				input16.close();
 				
 				System.out.print("\nEnter the customers name:");
 				Scanner input17 = new Scanner(System.in);
 				String customerName = input17.next();
-				input17.close();
 				
 				// locates the correct project and customer based on user input from the projects and 
 				// people lists, finalizes the project
