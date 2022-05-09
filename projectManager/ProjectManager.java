@@ -2,7 +2,9 @@
 
 package projectManager;
 import java.util.Scanner;
+import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 // defines the class
 public class ProjectManager {
@@ -19,7 +21,7 @@ public class ProjectManager {
 	    String option = "";
 	    
 	    // if user enters the "f" option the program is finalized and exited  
-		while (!option.equals("f")) {
+		while (!option.equals("e")) {
 		   
 			// user types the letters dealing with the corresponding option
 		    System.out.print("\nPlease choose an option below\n"
@@ -28,6 +30,7 @@ public class ProjectManager {
 			    		+ "\nupdate total amount paid            : ap"
 			    		+ "\nupdate contractors contact details  : cd"
 			    		+ "\nfinalize                            : f"
+			    		+ "\nexit                                : e"
 			    		+ "\n\nEnter your option here:");
 			Scanner input1 = new Scanner(System.in);
 			option = input1.next();
@@ -35,7 +38,7 @@ public class ProjectManager {
 			option.toLowerCase();
 			
 			// while loop iterates for every time the user enters an invalid option
-			while (!(option.equals("np") || option.equals("dd")|| option.equals("ap") || option.equals("cd") || option.equals("f"))) {
+			while (!(option.equals("np") || option.equals("dd")|| option.equals("ap") || option.equals("cd") || option.equals("f") || option.equals("e"))) {
 				
 				input1 = new Scanner(System.in);
 				System.out.print("\nPlease enter a valid option:\n"
@@ -44,6 +47,7 @@ public class ProjectManager {
 			    		+ "\nupdate total amount paid            : ap"
 			    		+ "\nupdate contractors contact details  : cd"
 			    		+ "\nfinalize                            : f"
+			    		+ "\nexit                                : e"
 			    		+ "\n\nEnter your option here:");
 				option = input1.next();
 				option.toLowerCase();
@@ -143,9 +147,15 @@ public class ProjectManager {
 				    else {
 				    	System.out.println("This person dosent exist.");
 				    }
-				}	
-		    }    
-		}  
+				}
+		    }
+		    if (option.equals("e")) {
+		    	
+		    	fileProjects(projects, people);
+		    	
+		    }	
+	   }
+		    
 	}
     // method finalizes the project 
     public static void finalise(Person customer, Project project) {
@@ -167,6 +177,30 @@ public class ProjectManager {
     			+ "\n"
     			+ "amount unpaid: R" + totalUnpaid);
     	    
-        }    
+        }
+    }
+    private static void fileProjects(ArrayList<Project> projects, ArrayList<Person> people) {
+    	
+    	for (Project project : projects) {
+    		
+    		try {
+				
+				String filepath = "C:\\Users\\delro\\eclipse-workspace\\rockPaperScissors\\src\\projectManager\\projects.txt";
+				FileWriter fw = new FileWriter(filepath, true);
+				fw.write("Project : " + project.name + Project.projectToString(project));
+				
+				for (Person person : people) {
+					
+					if (person.projectName == project.name ) {
+						fw.write(Person.personToString(person));
+						fw.close();
+					}
+				}
+			}
+			// catch block detects errors
+			catch (Exception e) {
+				System.out.println("error");
+			}		
+    	}
     }
 }

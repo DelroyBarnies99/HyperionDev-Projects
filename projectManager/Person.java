@@ -127,4 +127,9 @@ public class Person{
 			return person;
 			
 	}
+    public static String personToString(Person person) {
+    	
+		return "\n"+person.projectName+", "+person.position+", "+person.name+", "+person.telephoneNum+", "+person.email+", "+
+				person.physicalAddress;
+    }
 }

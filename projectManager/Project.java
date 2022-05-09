@@ -138,4 +138,9 @@ public class Project{
 		return project;
 		
 	}
+    public static String projectToString(Project project) {
+    	
+		return "\n"+project.name+", "+project.number+", "+project.buildingType+", "+project.address+", "+project.erf+", "+
+				project.fee+", "+project.amountPaid+", "+project.deadline;
+    }
 }
