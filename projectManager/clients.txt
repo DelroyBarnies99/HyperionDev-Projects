@@ -1,0 +1,6 @@
+Adrians House, architect, Daniel Fisher, 088 543 5344, daniel123@gmail.com, 99 Park Road
+Adrians House, contractor, Cherry Ann, 072 837 3827, CherryAnn@cloud.com, 66 Beachside Road
+Adrians House, customer, Burt Nathon, 072 364 3625, BurtNath@gmail.com, 87 West Avenue
+PlayboyMansion, architect, Daniel Vince, 088 326 1728, VinceDaniel@gmail.com, 24 Eastside Road
+PlayboyMansion, contractor, Bobby Fish, 072 483 5834, Bobby234@cloud.com, 98 Newton Avenue
+PlayboyMansion, customer, Edward Luther King, 034 384 3483, LutherKing@cloud.com, 01 Star Plaza

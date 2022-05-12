@@ -1,0 +1,2 @@
+Adrians House, 1, House, 75 Grove Street, 2556, 200000.0, 150000.0, 20/09/2025, upToDate
+PlayboyMansion, 2, Mansion, 35 Tory Lane, 3855, 5000000.0, 3500000.0, 13/02/2028, upToDate
