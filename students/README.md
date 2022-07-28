@@ -10,7 +10,7 @@ This program uses interfaces, inheritance and a Decorator Design Pattern to stor
 
 ## Installation
 
-Place Students.py file along with the corresponding text files in your python text editor and run the code.
+Place Students.py file along with the corresponding text files in your Java text editor and run the code.
 
 ## Contributors
 
